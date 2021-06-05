@@ -17,17 +17,28 @@ $Localusr            =  Get-LocalUser | Format-Table -Property Name, Enabled
 
 #Exporting data to .csv
 $Output = New-Object -TypeName psobject
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Date' -Value $Date
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Computer Name' -Value $Computername.PSComputerName
+
 $Output | Add-Member -MemberType NoteProperty -Name 'IP' -Value $IP.IPv4Address.IPaddress
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Network Adapter' -Value $NetworkAdapterinfo
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Users' -Value $Listofusers
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Services' -Value $Services = Get-Service | Format-Table -Property Name,Status
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Processes' -Value $Process
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Physical' -Value $Physical
+
 $Output | Add-Member -MemberType NoteProperty -Name 'AV' -Value $AV
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Connections' -Value $Connections
+
 $Output | Add-Member -MemberType NoteProperty -Name 'Local Users' -Value $Localusr
+
 $Output | ConvertTo-Csv -NoTypeInformation | Export-Csv C:\Users\Public\Baseline.csv -Append
-}
-}
+}}
