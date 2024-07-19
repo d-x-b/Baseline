@@ -1,0 +1,15 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "sshAuthorizedKeys": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCT9kz/pd0T2BnUJ/KRtavWExB8GPMre9N3PhVqRhetRCZga480lIVTkw+9OlB2UAkc246E2eyjilH5TwysYb+ujWzoT4BDYFJH3A4JZeXrjNbbdKFIy/COrPgyxz2cwsGtMNdnX8l/M3uaaWktWN+8ouQbi1W2E1abUydkJYwOLiygdwOmG/+U7acCRBxkEYt+cYeEHFiSE8mtaWN/NywtczjOkuADzN/tbn//Bnb4/9Yv3PKaQS/66dyHSh7gSspn+fJhD9+Oq8L+4hMj/VyUtV6IEL+c75eee5n5HrtF+rZsqL1csdTgy7EK6FG+vd1yEg81dyc2xToYdvgOoBCx6OjwkPtsLZJmDR3rUpWHMqZGB9/Wya919Cq91d8lioLmv/ZMOwUR2lP8A+AhJZ1Z6PvRJMNgSikduPQy28aR8XdZm1nTAwd7TERLa2hK7C+xwoRdjo5OpzuApfUYy9GSVMWkTnkx2hzTL9m5w1xQyVM6ERjD63pCx2OxYl+6Dn0= d-_-b@fedora"
+        ]
+      }
+    ]
+  }
+}
